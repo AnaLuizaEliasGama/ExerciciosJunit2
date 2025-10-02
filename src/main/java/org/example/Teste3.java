@@ -1,27 +1,19 @@
 package org.example;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
-public class Teste3Test {
-
-    @Test
-    public void testParMaiorQue10() {
-        assertEquals(1, Teste3.verificaNumero(12));
-    }
-
-    @Test
-    public void testParMenorOuIgual10() {
-        assertEquals(2, Teste3.verificaNumero(6));
-    }
-
-    @Test
-    public void testImparNegativo() {
-        assertEquals(3, Teste3.verificaNumero(-3));
-    }
-
-    @Test
-    public void testImparPositivo() {
-        assertEquals(4, Teste3.verificaNumero(7));
+public class Teste3 {
+    public static int verificaNumero(int n) {
+        if (n % 2 == 0) { // número par
+            if (n > 10) {
+                return 1; // par maior que 10
+            } else {
+                return 2; // par até 10
+            }
+        } else { // número ímpar
+            if (n < 0) {
+                return 3; // ímpar negativo
+            } else {
+                return 4; // ímpar positivo
+            }
+        }
     }
 }
