@@ -19,7 +19,7 @@ public class Teste1 {
         }
     }
 
-   // testes de números
+   // testes de números ☻☻
     @Test
     public void testPositivos() {
         assertEquals(7, foo(3, 4)); // 3 + 4 = 7
